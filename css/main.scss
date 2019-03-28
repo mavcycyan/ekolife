@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+@mixin shadow($shadow...) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+
+@mixin trans ($trans) {
+	transition:$trans;
+	-webkit-transition:$trans;
+	-moz-transition:$trans;
+	-o-transition:$trans;
+	-ms-transition:$trans;
+}
+
+@mixin border-radius ($border-radius) {
+	border-radius:$border-radius;
+	-webkit-border-radius:$border-radius;
+	-moz-border-radius:$border-radius;
+	-o-border-radius:$border-radius;
+	-ms-border-radius:$border-radius;
+}
+
+body {font-family: 'Geometria', sans-serif; font-size: 16px;font-weight: 400;background: #fff;color:#0d101f; min-height: 100vh;}
+
+input, button {
+    &:focus {box-shadow: none; outline:0;}
+}
+
+img { max-width: 100%; height:auto; }
+
+@media(min-width: 1200px){
+    .container{max-width: 1200px;}
+}
+ 
+/*header*/
+header {padding: 14px 0px; position: absolute; width: 100%; top: 0; left: 0; z-index: 3;}
+.h {
+    &-logo { display: block; text-align: center; }
+    &-btn { background: none; margin-top: 33px; width: 50px; border: 0; padding: 0; cursor: pointer;
+        span { background: #0d101f; width: 100%; display: block; height: 3px; margin: 10px 0; border-radius: 1px; 
+            &:first-child { margin-top: 0; } 
+            &:last-child { margin-bottom: 0; }
+        } 
+    } 
+    &-right { text-align: right; margin-top: 21px; } 
+    &-phn { display: inline-block; font-size: 24px; color: #000; } 
+    &-txt { display: inline-block; font-size: 14px; text-transform: uppercase; color: #b4bc00; letter-spacing: 3px; padding-top: 2px; }
+}
+
+/*header*/
+@media(max-width: 1600px) and (min-width: 1200px){
+   
+}
+
+
+@media(max-width: 991px) {
+    header{
+       
+        .h {
+
+        }    
+    }
+}
+
+.wrapper { background: url('../img/main_back.png')no-repeat 50% 0%;}
+
+@import "_fonts";
+@import "_index";
+ 
+/*footer*/
+footer { }
+.f {
+     
+}
+
+/*footer*/
+@media(max-width: 991px) and (min-width: 768px){
+    
+}
+@media(max-width: 991px) {
+    footer {}
+    .f{
+
+    }
+}
+
+
