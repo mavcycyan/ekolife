@@ -73,6 +73,13 @@ header {
   src: url("../fonts/Geometria/Geometria.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria/Geometria.woff") format("woff"), url("../fonts/Geometria/Geometria.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+/* font-family: "Geometria-Bold"; */
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Bold/Geometria-Bold.eot");
+  src: url("../fonts/Geometria-Bold/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Bold/Geometria-Bold.woff") format("woff"), url("../fonts/Geometria-Bold/Geometria-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
 /*main*/
 .main {
   padding-top: 112px;
@@ -219,7 +226,8 @@ header {
 /*main*/
 /*future*/
 .future {
-  padding-top: 112px; }
+  padding-top: 112px;
+  padding-bottom: 50px; }
   .future-ttl {
     font-size: 60px;
     text-transform: uppercase;
@@ -236,9 +244,60 @@ header {
     line-height: 1.7;
     letter-spacing: 4.5px;
     margin-top: 21px; }
-  .future-bl-ttl {
-    font-size: 18px;
-    font-weight: 700; }
+  .future-bl {
+    margin-top: 70px; }
+    .future-bl-ttl {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.3; }
+    .future-bl-txt {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.7; }
+      .future-bl-txt p {
+        margin-bottom: 30px; }
+    .future-bl-more {
+      background: #dde352;
+      display: inline-block;
+      width: 267px;
+      text-align: center;
+      font-size: 14px;
+      padding: 22px 10px;
+      text-transform: uppercase;
+      color: #0d101f;
+      letter-spacing: 4px;
+      border-radius: 4px;
+      margin-right: 28px;
+      opacity: 1;
+      margin-top: 16px; }
+      .future-bl-more:hover, .future-bl-more:focus {
+        text-decoration: none;
+        color: #0d101f;
+        opacity: 0.7; }
+  .future-img {
+    margin-bottom: 30px; }
+    .future-img-wp {
+      margin-top: 61px; }
+    .future-img.mb {
+      margin-bottom: 36px; }
+    .future-img-more {
+      background: none;
+      width: 300px;
+      text-align: center;
+      font-size: 14px;
+      padding: 21px 10px;
+      text-transform: uppercase;
+      color: #0d101f;
+      letter-spacing: 4px;
+      border-radius: 4px;
+      border: 1px solid #dde352;
+      opacity: 1;
+      margin: 13px auto 0;
+      display: block; }
+      .future-img-more:hover, .future-img-more:focus {
+        text-decoration: none;
+        color: #0d101f;
+        opacity: 0.7; }
 
 /*future*/
 /*footer*/
