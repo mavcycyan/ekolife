@@ -12,6 +12,7 @@
 	<link rel="canonical" href="">
 	<title>Эколайф</title> 
    
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" />
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -201,21 +202,91 @@
             <div class="gal-txt">это ультрасовременные технологии в сочетании <br>с Европейской архитектурой</div>
             <div class="gal-cont">
                 <div class="gal-cont-row">
-                    <div class="gal-cont-img"><img src="img/gal1.jpg" alt=""></div>
-                    <div class="gal-cont-img"><img src="img/gal2.jpg" alt=""></div>
-                    <div class="gal-cont-img"><img src="img/gal3.jpg" alt=""></div>
-                    <div class="gal-cont-img"><img src="img/gal4.jpg" alt=""></div>
+                    <a href="img/gal1.jpg" class="gal-cont-img fancybox"><img src="img/gal1.jpg" alt=""></a>
+                    <a href="img/gal2.jpg" class="gal-cont-img fancybox"><img src="img/gal2.jpg" alt=""></a>
+                    <a href="img/gal3.jpg" class="gal-cont-img fancybox"><img src="img/gal3.jpg" alt=""></a>
+                    <a href="img/gal4.jpg" class="gal-cont-img fancybox"><img src="img/gal4.jpg" alt=""></a>
                 </div>
                 <div class="gal-cont-row">
-                    <div class="gal-cont-vid"><img src="img/gal5.jpg" alt=""></div>
-                    <div class="gal-cont-img"><img src="img/gal6.jpg" alt=""></div>
-                    <div class="gal-cont-img"><img src="img/gal7.jpg" alt=""></div>
+                    <a href="img/gal5.jpg" class="gal-cont-vid fancybox"><img src="img/gal5.jpg" alt=""></a>
+                    <a href="img/gal6.jpg" class="gal-cont-img fancybox"><img src="img/gal6.jpg" alt=""></a>
+                    <a href="img/gal7.jpg" class="gal-cont-img fancybox"><img src="img/gal7.jpg" alt=""></a>
                 </div>
                 <div class="gal-cont-row">
-                    <div class="gal-cont-img"><img src="img/gal8.jpg" alt=""></div>
-                    <div class="gal-cont-img"><img src="img/gal9.jpg" alt=""></div>
-                    <div class="gal-cont-img"><img src="img/gal10.jpg" alt=""></div>
-                    <div class="gal-cont-img"><img src="img/gal11.jpg" alt=""></div>
+                    <a href="img/gal8.jpg" class="gal-cont-img fancybox"><img src="img/gal8.jpg" alt=""></a>
+                    <a href="img/gal9.jpg" class="gal-cont-img fancybox"><img src="img/gal9.jpg" alt=""></a>
+                    <a href="img/gal10.jpg" class="gal-cont-img fancybox"><img src="img/gal10.jpg" alt=""></a>
+                    <a href="img/gal11.jpg" class="gal-cont-img fancybox"><img src="img/gal11.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="choose">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="choose-subttl">выберите<span>свой новый</span></div>
+                    <div class="choose-ttl">ДОМ</div>  
+                </div>
+                <div class="col-12 col-md-6 col-lg-9">
+                    <div class="choose-txt">Товарищи! рамки и место обучения кадров в значительной степени обуславливает создание новых предложений. С другой стороны укрепление и развитие структуры представляет собой интересный эксперимент проверки дальнейших направлений развития.</div>
+                </div>
+            </div>
+            <div class="sl-block">
+                <ul id="choose-sl">
+                    <li data-txt="sl1-txt0">
+                        <img src="img/choose1.jpg" alt="">
+                        <span>Общий вид</span>
+                    </li>
+                    <li data-txt="sl1-txt1">
+                        <img src="img/choose1.jpg" alt="">
+                        <span>Общий вид2</span>
+                    </li>
+                    <li data-txt="sl1-txt2">
+                        <img src="img/choose1.jpg" alt="">
+                        <span>Общий вид3</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="sl-block-cont active" data-cont="sl1-cont0">
+                        <div class="sl-block-cont-ttl">Дуплекс - 200 м<sup>2</sup></div>
+                        <div class="sl-block-cont-subttl">+ земельный участок 300 м<sup>2</sup></div>
+                        <div class="sl-block-cont-txt"><b>Время строительства:</b><br>
+                        6 месяцев
+                        </div>
+                        <div class="sl-block-cont-txt"><b>Дополнительные возможности:</b><br>
+                        бассейн, беседка и детская площадка, интерьер под ключ.
+                        </div>
+                    </div>
+                    <div class="sl-block-cont" data-cont="sl1-cont1">
+                        <div class="sl-block-cont-ttl">Дуплекс - 450 м<sup>2</sup></div>
+                        <div class="sl-block-cont-subttl">+ земельный участок 550 м<sup>2</sup></div>
+                        <div class="sl-block-cont-txt"><b>Время строительства:</b><br>
+                        6 месяцев
+                        </div>
+                        <div class="sl-block-cont-txt"><b>Дополнительные возможности:</b><br>
+                        бассейн, беседка и детская площадка, интерьер под ключ.
+                        </div>
+                    </div>  
+                    <div class="sl-block-cont" data-cont="sl1-cont2">
+                        <div class="sl-block-cont-ttl">Дуплекс - 100 м<sup>2</sup></div>
+                        <div class="sl-block-cont-subttl">+ земельный участок 250 м<sup>2</sup></div>
+                        <div class="sl-block-cont-txt"><b>Время строительства:</b><br>
+                        6 месяцев
+                        </div>
+                        <div class="sl-block-cont-txt"><b>Дополнительные возможности:</b><br>
+                        бассейн, беседка и детская площадка, интерьер под ключ.
+                        </div>
+                    </div>                                      
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="sl-block-right active" data-cont="sl1-right0">
+                        <div class="sl-block-right-txt">Получите презентацию дома с полным<br>описанием, фотографиями и ценами</div>
+                        <a href="#" class="sl-block-right-btn">Получить перзентацию</a>
+                        <a href="#" class="sl-block-right-see">Посмотреть варианты интерьера</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,20 +324,33 @@
 <script type="text/javascript" src="js/lightslider.min.js"></script>
 <script>
 $(document).ready(function() {		
-    $('#works-sl').lightSlider({
+    $('#choose-sl').lightSlider({
         item:1,
         auto:false,
-        autoWidth:true,
+        autoWidth:false,
         loop:false,
         pause: 4000,
         speed:1000,
         controls:true,
-        enableDrag:true,
-        enableTouch:true,
+        enableDrag:false,
+        enableTouch:false,
         freeMove:false,
-        pager:false, 
+        pager:true, 
         onSliderLoad: function() {
-                $('#works-sl').removeClass('cS-hidden');
+                $('#choose-sl').removeClass('cS-hidden');
+                $('.lSPager li a').each(function(i){
+                    $(this).text($('[data-txt="sl1-txt'+i+'"] span').text());
+                });
+        },
+        onAfterSlide: function(el){
+          el.children('li').each(function(i){
+              if($(this).hasClass('active')){
+                  $('.sl-block-cont').removeClass('active');
+                  $('.sl-block-right').removeClass('active');
+                  $('[data-cont="sl1-cont'+i+'"]').addClass('active');
+                  $('[data-cont="sl1-right'+i+'"]').addClass('active');
+              }
+          });  
         },
         responsive : [
         {
@@ -277,10 +361,15 @@ $(document).ready(function() {
 
         });
 });
-</script>
-   
+</script>   
     
 <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+$(".fancybox").fancybox();
+});
+</script>
+
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
