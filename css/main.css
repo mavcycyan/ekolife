@@ -124,6 +124,93 @@ header { padding: 14px 0px; position: absolute; width: 100%; top: 0; left: 0; z-
 /*choose*/
 @media (min-width: 1200px) { .choose .col-lg-3 { -webkit-box-flex: 0; -ms-flex: 0 0 29%; flex: 0 0 29%; max-width: 29%; }
   .choose .col-lg-9 { -webkit-box-flex: 0; -ms-flex: 0 0 71%; flex: 0 0 71%; max-width: 71%; } }
+/*choose2*/
+.choose2 { padding-top: 61px; }
+.choose2-subttl { font-size: 36px; text-transform: uppercase; color: #0d101f; line-height: 1.23; letter-spacing: 10px; }
+.choose2-subttl span { font-size: 30px; display: block; letter-spacing: 8px; padding-top: 10px; }
+.choose2-ttl { font-size: 75px; text-transform: uppercase; color: #0d101f; line-height: 1; letter-spacing: 23px; padding-top: 7px; }
+.choose2-txt { margin-top: 4px; font-size: 18px; line-height: 1.7; }
+.choose2 .sl-block { margin-top: 0; }
+.choose2 .sl-block .lSSlideOuter { padding: 0 69px !important; }
+.choose2 .sl-block ul { margin-bottom: 0; }
+.choose2 .sl-block ul li span { display: none; }
+.choose2 .sl-block .lSPager.lSpg { position: absolute; bottom: 10px; left: 89px; }
+.choose2 .sl-block .lSPager.lSpg > li a { width: 30px; height: 30px; background: #fff; text-indent: 0; padding: 7px 13px; line-height: 1; color: #fff; text-transform: uppercase; letter-spacing: 5px; }
+.choose2 .sl-block .lSPager.lSpg > li.active a { width: auto; color: #000; }
+.choose2 .sl-block-cont { display: none; background: #fff; margin-top: -81px; padding: 62px 23px 62px 28px; position: relative; }
+.choose2 .sl-block-cont:before { content: ''; position: absolute; top: 0; right: 0; height: 100%; width: 50vw; display: block; background: #fff; z-index: -1; }
+.choose2 .sl-block-cont.active { display: block; }
+.choose2 .sl-block-cont-ttl { font-size: 38px; text-transform: uppercase; color: #0d101f; line-height: 1.23; letter-spacing: 10px; }
+.choose2 .sl-block-cont-subttl { font-size: 24px; text-transform: uppercase; color: #0d101f; line-height: 1.23; letter-spacing: 4.5px; padding-top: 8px; font-weight: 300; }
+.choose2 .sl-block-cont-txt { font-size: 18px; margin-top: 13px; }
+.choose2 .sl-block-right { display: none; padding-top: 52px; text-align: center; }
+.choose2 .sl-block-right.active { display: block; }
+.choose2 .sl-block-right-txt { font-size: 18px; display: inline-block; letter-spacing: 0px; line-height: 1.7; text-align: left; }
+.choose2 .sl-block-right-btn { width: 100%; display: inline-block; max-width: 460px; background: #dde352; color: #000; text-transform: uppercase; font-size: 14px; letter-spacing: 4px; margin-top: 35px; padding: 21px 15px; border-radius: 4px; }
+.choose2 .sl-block-right-btn:hover, .choose2 .sl-block-right-btn:focus { text-decoration: none; color: #000; }
+.choose2 .sl-block-right-see { display: inline-block; width: 100%; max-width: 380px; font-size: 14px; text-transform: uppercase; letter-spacing: 3px; color: #000; margin-top: 19px; border-bottom: 1px dotted #000; line-height: 1.1; }
+.choose2 .sl-block-right-see:hover, .choose2 .sl-block-right-see:focus { text-decoration: none; color: #000; }
+
+/*choose2*/
+@media (min-width: 1200px) { .choose2 .col-lg-3 { -webkit-box-flex: 0; -ms-flex: 0 0 29%; flex: 0 0 29%; max-width: 29%; }
+  .choose2 .col-lg-9 { -webkit-box-flex: 0; -ms-flex: 0 0 71%; flex: 0 0 71%; max-width: 71%; } }
+/*choose3*/
+.choose3 { padding-top: 61px; background: #13162b; padding-bottom: 80px; }
+.choose3-subttl { font-size: 36px; text-transform: uppercase; color: #0d101f; line-height: 1.23; letter-spacing: 10px; }
+.choose3-subttl span { font-size: 30px; display: block; letter-spacing: 8px; padding-top: 10px; }
+.choose3-ttl { font-size: 75px; text-transform: uppercase; color: #0d101f; line-height: 1; letter-spacing: 23px; padding-top: 7px; }
+.choose3-txt { margin-top: 4px; font-size: 18px; line-height: 1.7; }
+.choose3 .sl-block { margin-top: 0; }
+.choose3 .sl-block .lSSlideOuter { padding: 0 69px !important; }
+.choose3 .sl-block ul { margin-bottom: 0; }
+.choose3 .sl-block ul li span { display: none; }
+.choose3 .sl-block .lSPager.lSpg { position: absolute; bottom: 10px; right: 89px; }
+.choose3 .sl-block .lSPager.lSpg > li a { width: 30px; height: 30px; background: #fff; text-indent: 0; padding: 7px 13px; line-height: 1; color: #fff; text-transform: uppercase; letter-spacing: 5px; }
+.choose3 .sl-block .lSPager.lSpg > li.active a { width: auto; color: #000; }
+.choose3 .sl-block-cont { display: none; background: #fff; margin-top: -150px; padding: 47px 23px 61px 28px; position: relative; }
+.choose3 .sl-block-cont:before { content: ''; position: absolute; top: 0; right: 0; height: 100%; width: 50vw; display: block; background: #fff; z-index: -1; }
+.choose3 .sl-block-cont.active { display: block; }
+.choose3 .sl-block-cont-ttl { font-size: 38px; text-transform: uppercase; color: #0d101f; line-height: 1.23; letter-spacing: 10px; }
+.choose3 .sl-block-cont-subttl { font-size: 24px; text-transform: uppercase; color: #0d101f; line-height: 1.23; letter-spacing: 4.5px; padding-top: 8px; font-weight: 300; }
+.choose3 .sl-block-cont-txt { font-size: 18px; margin-top: 13px; }
+.choose3 .sl-block-right { display: none; padding-top: 25px; text-align: center; }
+.choose3 .sl-block-right.active { display: block; }
+.choose3 .sl-block-right-txt { font-size: 18px; display: inline-block; letter-spacing: 0px; line-height: 1.7; text-align: left; color: #fff; }
+.choose3 .sl-block-right-btn { width: 100%; display: inline-block; max-width: 460px; background: #dde352; color: #000; text-transform: uppercase; font-size: 14px; letter-spacing: 4px; margin-top: 35px; padding: 21px 15px; border-radius: 4px; }
+.choose3 .sl-block-right-btn:hover, .choose3 .sl-block-right-btn:focus { text-decoration: none; color: #000; }
+.choose3 .sl-block-right-see { display: inline-block; width: 100%; max-width: 380px; font-size: 14px; text-transform: uppercase; letter-spacing: 3px; color: #fff; margin-top: 19px; border-bottom: 1px dotted #fff; line-height: 1.1; }
+.choose3 .sl-block-right-see:hover, .choose3 .sl-block-right-see:focus { text-decoration: none; color: #fff; }
+
+/*choose3*/
+@media (min-width: 1200px) { .choose3 .col-lg-3 { -webkit-box-flex: 0; -ms-flex: 0 0 29%; flex: 0 0 29%; max-width: 29%; }
+  .choose3 .col-lg-9 { -webkit-box-flex: 0; -ms-flex: 0 0 71%; flex: 0 0 71%; max-width: 71%; } }
+/*infr*/
+.infr { background: url("../img/infr_back.jpg") no-repeat 50% 0%; padding-top: 63px; }
+.infr-ttl { font-size: 38px; text-transform: uppercase; color: #0d101f; line-height: 1.25; letter-spacing: 8px; margin-top: 17px; }
+.infr-ttl span { font-size: 48px; letter-spacing: 12px; }
+.infr-cont { padding-left: 24px; }
+.infr-bl { position: relative; border: 1px solid #dde352; margin: 7px; max-width: 367px; padding: 19px 22px; }
+.infr-bl:before { content: ''; position: absolute; display: block; top: -7px; left: -7px; background: #fff; width: calc(100% + 14px); height: calc(100% + 14px); z-index: 0; }
+.infr-bl:after { content: ''; position: absolute; display: block; top: 0; left: 0; background: #fff; width: 100%; height: 100%; border: 1px solid #dde352; z-index: 0; }
+.infr-bl-ttl { z-index: 1; position: relative; font-size: 19px; text-transform: uppercase; color: #0d101f; line-height: 1.25; letter-spacing: 4px; font-weight: 700; }
+.infr-bl-txt { z-index: 1; position: relative; margin-top: 18px; }
+.infr-bl-btn { position: relative; display: block; z-index: 1; background: #dde352; max-width: 223px; text-transform: uppercase; color: #000; border-radius: 4px; margin-top: 19px; text-align: center; font-size: 13px; padding: 8px 10px; letter-spacing: 3px; opacity: 1; }
+.infr-bl-btn:hover, .infr-bl-btn:focus { text-decoration: none; color: #000; opacity: 0.5; }
+.infr-bottom { margin-top: 337px; padding-bottom: 35px; }
+.infr-bottom-bl { margin-bottom: 20px; }
+.infr-bottom-bl.rt { margin-left: 39px; }
+.infr-bottom-bl-txt { margin-top: 13px; color: #fff; font-size: 18px; }
+
+/*infr*/
+/*buy*/
+.buy { background: url("../img/buy_back.jpg") no-repeat 50% 0%; padding-top: 63px; padding-bottom: 211px; }
+.buy-ttl { font-size: 38px; text-transform: uppercase; color: #0d101f; line-height: 1.25; letter-spacing: 8px; margin-top: 17px; }
+.buy-ttl span { font-size: 48px; letter-spacing: 12px; }
+.buy-txt { margin-top: 61px; line-height: 1.8; }
+.buy-btn { display: block; background: #dde352; max-width: 374px; text-transform: uppercase; color: #000; border-radius: 4px; margin-top: 84px; text-align: center; font-size: 14px; padding: 22px 10px; letter-spacing: 4px; opacity: 1; }
+.buy-btn:hover, .buy-btn:focus { text-decoration: none; color: #000; opacity: 0.5; }
+
+/*buy*/
 /*footer*/
 /*footer*/
 
