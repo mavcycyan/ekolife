@@ -269,3 +269,137 @@
     }   
 }
 /*buy*/
+
+/*plans*/
+.plans {
+    &-sl { padding-top: 73px; 
+        .lSSlideOuter { padding: 0!important; 
+            .lSPager.lSpg { position: absolute; bottom: 25px; left: 14px; 
+                & > li {
+                    a { width: 24px; height: 24px; border: 1px solid #dcdcdc; background: #dcdcdc; }
+                    &:hover a, &.active a { background: #fff; }
+                }  
+            }     
+        }
+        .lSAction { overflow: hidden; position: absolute; right: 0; top: 0; width: 47vw; height: auto; text-align: right; 
+            a { position: static; display: inline-block; margin: 0; width: 19.5vw; border: 1px solid #ebebeb; text-align: center; text-transform: uppercase; font-size: 1vw; border-radius: 4px; height: auto; padding: 22px 6px; letter-spacing: 5px; margin-left: 32px; 
+                &:hover {border: 1px solid #dde258;}
+            }
+            &.arrs {top: 58%; transform: translateY(-50%); width: 38vw; height: 78px; right: 43px;
+                a { width: 32px; height: 78px; text-indent: -9999px; position: absolute; display: block; top: 0; border: 0; 
+                    &.lSPrev { left: 0; background: url('../img/arrs.png')no-repeat 0% 0%;} 
+                    &.lSNext { right: 0; background: url('../img/arrs.png')no-repeat 100% 0%; }
+                } 
+            }
+        }
+    }  
+    &-ttl { font-size: 38px; text-transform: uppercase; color: #0d101f; line-height: 1.25; letter-spacing: 5px; display: block; margin-top: 13px; }
+    &-txt { display: block; margin-top: 58px; line-height: 1.7; 
+        b { display: block; font-size: 18px; font-weight: 700; letter-spacing: 5px; margin-bottom: 27px; }
+    }  
+    &-btn { display: block; background: #dde352; max-width: 398px; text-transform: uppercase; color: #000; border-radius: 4px; margin-top: 69px; text-align: center; font-size: 14px; padding: 22px 10px; letter-spacing: 4px; opacity: 1; 
+        &:hover, &:focus { text-decoration: none; color: #000; opacity: 0.5; }
+    } 
+    &-img {display: block;margin-top: 94px;}
+} 
+/*plans*/
+
+/*unik*/
+.unik { padding-top: 124px; padding-bottom: 64px;
+    &-ttl { text-transform: uppercase; font-size: 24px; color: #0000004d; padding-left: 39px; letter-spacing: 6.2px; position: relative;
+        &:before { content: ''; position: absolute; background: #d3dc00; left: 3px; top: 50%; transform: translateY(-50%); width: 9px; height: 9px; border-radius: 50%; box-shadow: 0px 0px 5px 0px #d3dc00; }
+    }
+    &-container { margin: 0 auto; margin-top: 36px; max-width: 1440px; overflow: hidden; } 
+    &-bl { float: left; position: relative;
+        &-ttl { position: absolute; z-index: 2; top: 24px; right: 12px; text-transform: uppercase; color: #fff;font-size: 0.95vw; letter-spacing: 3px; text-align: right; }
+        &-img { position: relative; z-index: 1; }
+        &.one { width: 25.66%; max-width: 370px; 
+            .unik-bl-ttl { color: #0d101f; }
+        } 
+        &.two { width: 27.11%; max-width: 390px; } 
+        &.three { width: 27.11%; max-width: 390px; } 
+        &.four { width: 20.11%; max-width: 290px; 
+            .unik-bl-ttl { color: #0d101f; }
+        }
+    }
+}
+/*unik*/
+
+/*ekskurs*/
+.ekskurs { background: url('../img/ekskurs_back.jpg')no-repeat -8% 50%, #252939; background-size: contain; padding-top: 45px; padding-bottom: 98px;
+    &-left { padding-left: 249px; padding-top: 57px; } 
+    &-txt { text-transform: uppercase; font-weight: 700; color: #dde352; font-size: 18px; letter-spacing: 4.7px; } 
+    &-ttl { color: #fff; text-transform: uppercase; font-size: 30px; letter-spacing: 8px; margin-top: 15px; line-height: 1.6; }
+    &-img { position: absolute; bottom: -98px; left: -27px; width: 100%; max-width: 29vw; }
+    &-form {
+        &-txt { color: #fff; font-size: 18px; } 
+        form { margin-top: 45px; } 
+        &-in { max-width: 400px; margin-bottom: 38px; 
+            label { color: #fff; font-size: 12px; text-transform: uppercase; display: block; margin-left: 10px; letter-spacing: 4px; margin-bottom: 0; } 
+            input[type="text"] { background: none; border: 0; border-bottom: 1px solid #fff; color: #fff; text-transform: uppercase; font-size: 24px; margin-top: 6px; padding-left: 10px; padding-bottom: 16px; width: 100%; 
+                &::-webkit-input-placeholder { color:#fff; } 
+                &::-moz-placeholder { color:#fff; } 
+                &:-ms-input-placeholder { color:#fff; } 
+                &:-moz-placeholder { color:#fff; }
+            }
+        }
+        &-btn { display: block; background: #dde352; text-transform: uppercase; color: #000; border-radius: 4px; text-align: center; font-size: 14px; padding: 22px 10px; letter-spacing: 4px; opacity: 1; width: 100%; max-width: 400px; border: 0; cursor: pointer; 
+            &:hover, &:focus {text-decoration: none; color: #000; opacity: 0.5; outline:0; box-shadow: none;}
+        } 
+        &-span { display: block; text-align: center; color: #fff; font-size: 12px; margin-top: 18px; max-width: 400px; 
+            a { color: #fff; text-decoration: underline; }
+        } 
+    } 
+}
+/*ekskurs*/
+
+/*ekolog*/
+.ekolog { padding: 56px 0 51px; 
+    &-ttl { font-size: 38px; text-transform: uppercase; color: #0d101f; line-height: 1.25; letter-spacing: 5.6px; display: block; }  
+    &-txt { text-transform: uppercase; font-size: 16px; margin-top: 7px; letter-spacing: 3px; } 
+    &-sl { margin-top: 51px; 
+        li { text-align: center; }
+        .lSAction a { height: 37px; margin-top: -24px; background-size: 29px!important; width: 15px;
+            &.lSPrev { background: url('../img/arrs.png')no-repeat 0% 0%;} 
+            &.lSNext { background: url('../img/arrs.png')no-repeat 100% 0%; }
+        }
+    } 
+}
+/*ekolog*/
+
+/*answer*/
+.answer { background: url('../img/answer_back.jpg')no-repeat -8% 50%, #252939; background-size: contain; padding-top: 45px; padding-bottom: 70px;
+    &-left { padding-top: 27px;} 
+    &-txt { text-transform: uppercase; color: #fff; font-size: 18px; letter-spacing: 4.3px; } 
+    &-ttl { color: #fff; text-transform: uppercase; font-size: 30px; letter-spacing: 8px; margin-top: 6px; line-height: 1.6; }
+    &-write { padding-top: 49px; padding-left: 143px; 
+        &-ttl { color: #fff; } 
+        &-soc { margin-top: 17px; 
+            a { display: inline-block; border: 1px solid #fff; border-radius: 4px; width: 100%; max-width: 167px; margin-right: 13px; padding: 12px 10px; text-align: center; color: #fff; letter-spacing: 3.1px; margin-bottom: 19px; opacity: 1; 
+                &.wa {border-color:#2ab200;}
+                &.vb {border-color:#7e51a2;}
+                &.tm {border-color:#2ca5e0;}
+                &:hover, &:focus {opacity: 0.5; text-decoration: none; color: #fff;}
+            }  
+        }   
+    } 
+    &-form { 
+        form { margin-top: 26px; } 
+        &-in { max-width: 400px; margin-bottom: 38px; 
+            label { color: #fff; font-size: 12px; text-transform: uppercase; display: block; margin-left: 10px; letter-spacing: 4px; margin-bottom: 0; } 
+            input[type="text"] { background: none; border: 0; border-bottom: 1px solid #fff; color: #fff; text-transform: uppercase; font-size: 24px; margin-top: 6px; padding-left: 10px; padding-bottom: 16px; width: 100%; 
+                &::-webkit-input-placeholder { color:#fff; } 
+                &::-moz-placeholder { color:#fff; } 
+                &:-ms-input-placeholder { color:#fff; } 
+                &:-moz-placeholder { color:#fff; }
+            }
+        }
+        &-btn { display: block; background: #dde352; text-transform: uppercase; color: #000; border-radius: 4px; text-align: center; font-size: 14px; padding: 22px 10px; letter-spacing: 4px; opacity: 1; width: 100%; max-width: 400px; border: 0; cursor: pointer; 
+            &:hover, &:focus {text-decoration: none; color: #000; opacity: 0.5; outline:0; box-shadow: none;}
+        } 
+        &-span { display: block; text-align: center; color: #fff; font-size: 12px; margin-top: 18px; max-width: 400px; 
+            a { color: #fff; text-decoration: underline; }
+        } 
+    } 
+}
+/*answer*/
