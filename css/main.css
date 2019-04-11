@@ -307,6 +307,32 @@ header { padding: 14px 0px; position: absolute; width: 100%; top: 0; left: 0; z-
 .answer-form-span a { color: #fff; text-decoration: underline; }
 
 /*answer*/
+/*news*/
+.news { padding-top: 103px; padding-bottom: 127px; }
+.news-ttl { font-size: 38px; text-transform: uppercase; color: #0d101f; line-height: 1.25; letter-spacing: 5px; display: block; }
+.news-btn { background: none; display: block; width: 100%; max-width: 298px; text-align: center; font-size: 14px; padding: 21px 10px; text-transform: uppercase; color: #0d101f; letter-spacing: 4px; border-radius: 4px; border: 1px solid #dde352; opacity: 1; margin-left: 50px; }
+.news-btn:hover, .news-btn:focus { color: #0d101f; text-decoration: none; opacity: 0.5; }
+.news-cont { margin-top: 31px; }
+.news-bl { padding: 10px 10px 22px; background: #fff; box-shadow: 0px 34px 64px 20px #66666636; margin-bottom: 20px; }
+.news-bl-img { text-align: center; display: block; }
+.news-bl-date { text-transform: uppercase; font-size: 12px; font-weight: 700; padding: 0 7px; margin-top: 21px; }
+.news-bl-ttl { color: #0d101f; margin-top: 6px; font-size: 19px; padding: 0 6px; height: 56px; overflow: hidden; display: block; }
+.news-bl-txt { padding: 0 7px; margin-top: 13px; font-size: 14px; line-height: 1.8; height: 100px; overflow: hidden; }
+
+/*news*/
+/*contacts*/
+.contacts { position: relative; }
+.contacts .contacts-bl { background: #fff; position: absolute; top: 61px; width: 100%; max-width: 435px; top: 50%; transform: translateY(-50%); left: 6.5vw; padding: 35px 39px; }
+.contacts .contacts-bl-ttl { font-weight: 700; text-transform: uppercase; font-size: 19px; letter-spacing: 3px; }
+.contacts .contacts-bl-txt { font-size: 18px; margin-top: 8px; }
+.contacts .contacts-bl-phn { display: block; font-weight: 700; color: #000; font-size: 24px; margin-top: 11px; }
+.contacts .contacts-bl-txt2 { font-weight: 700; text-transform: uppercase; font-size: 19px; letter-spacing: 3px; margin-top: 47px; }
+.contacts .contacts-bl-phn2 { font-size: 24px; display: block; color: #000; margin-top: 1px; }
+.contacts .contacts-bl-ml { display: block; color: #000; font-size: 18px; font-weight: 500; margin-top: 15px; }
+.contacts .contacts-bl-btn { display: block; background: #dde352; max-width: 346px; text-transform: uppercase; color: #000; border-radius: 4px; margin-top: 45px; text-align: center; font-size: 14px; padding: 22px 10px; letter-spacing: 4px; opacity: 1; }
+.contacts .contacts-bl-btn:hover, .contacts .contacts-bl-btn:focus { color: #000; text-decoration: none; opacity: 0.5; }
+
+/*contacts*/
 /*footer*/
 /*footer*/
 

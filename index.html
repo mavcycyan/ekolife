@@ -659,6 +659,126 @@
             </div>
         </div>
     </div>
+    <div class="news">
+        <div class="container">
+           <div class="row">
+                <div class="col-12 order-md-1 col-md-6 col-lg-8"><div class="news-ttl">Новости</div></div>
+                <div class="col-12 order-md-3">
+                    <div class="news-cont row">
+                        <div class="col-12 col-lg-4">
+                            <div class="news-bl">
+                                <a href="#" class="news-bl-img"><img src="img/news1.jpg" alt=""></a>
+                                <div class="news-bl-date">Декабрь 4, 2016</div>
+                                <a href="#" class="news-bl-ttl">ХОД СТРОИТЕЛЬСТВА. ОСЕНЬ <br>2016.</a>
+                                <div class="news-bl-txt">Удачное географическое положение и близость к крупнейшим рынкам сбыта является неоспоримым преимуществом данного места</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="news-bl">
+                                <a href="#" class="news-bl-img"><img src="img/news2.jpg" alt=""></a>
+                                <div class="news-bl-date">Январь 4, 2016</div>
+                                <a href="#" class="news-bl-ttl">VARNA WINERY</a>
+                                <div class="news-bl-txt">Абсолютно новый формат жизни и отдыха привлечет поток туристов, бизнесменов и фермеров</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="news-bl">
+                                <a href="#" class="news-bl-img"><img src="img/news3.jpg" alt=""></a>
+                                <div class="news-bl-date">Декабрь 4, 2016</div>
+                                <a href="#" class="news-bl-ttl">ЭКСПЛУАТИРУЕМАЯ КРОВЛЯ</a>
+                                <div class="news-bl-txt">Спортивные площадки, медицинские учреждения, Event-show площадка и бизнес-центры станут подспорьем для дальнейшего развития бизнеса</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 order-md-2 col-md-6 col-lg-4"><a href="#" class="news-btn">Читать все новости</a></div>               
+           </div>
+        </div>
+    </div>
+    <div class="contacts">
+        <style>
+            #map{height: 670px; width: 100%;}
+            .ymaps-2-1-73-inner-panes {
+                filter: invert(100%);
+                -ms-filter: invert(100%);
+                -webkit-filter: invert(100%);
+                -moz-filter: invert(100%);
+                -o-filter: invert(100%);
+            }            
+        </style>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f6982c0e-51f2-442c-9d71-c508e80efcb4" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+            ymaps.ready(function () {
+                var myMap = new ymaps.Map('map', {
+                        center: [43.359385, 27.982018],
+                        zoom: 19
+                    }, {
+                        searchControlProvider: 'yandex#search'
+                    }),
+
+                    // Создаём макет содержимого.
+                    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                    ),
+
+                    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                        hintContent: 'Варна, село Генерал Кантарджиево',
+                        balloonContent: 'Варна, село Генерал Кантарджиево'
+                    }, {
+                        // Опции.
+                        // Необходимо указать данный тип макета.
+                        iconLayout: 'default#image',
+                        // Своё изображение иконки метки.
+                        iconImageHref: 'img/myIcon.png',
+                        // Размеры метки.
+                        iconImageSize: [30, 42],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её "ножки" (точки привязки).
+                        iconImageOffset: [-5, -38],
+                    }),
+
+                    myPlacemarkWithContent = new ymaps.Placemark([43.359385, 27.982018], {
+                        hintContent: 'Варна, село Генерал Кантарджиево',
+                        balloonContent: 'Варна, село Генерал Кантарджиево',
+                        iconContent: '12'
+                    }, {
+                        // Опции.
+                        // Необходимо указать данный тип макета.
+                        iconLayout: 'default#imageWithContent',
+                        // Своё изображение иконки метки.
+                        iconImageHref: 'img/myIc.png',
+                        // Размеры метки.
+                        iconImageSize: [48, 48],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её "ножки" (точки привязки).
+                        iconImageOffset: [-24, -24],
+                        // Смещение слоя с содержимым относительно слоя с картинкой.
+                        iconContentOffset: [15, 15],
+                        // Макет содержимого.
+                        iconContentLayout: MyIconContentLayout
+                    });
+
+                myMap.geoObjects
+                    .add(myPlacemark)
+                    .add(myPlacemarkWithContent);
+                
+                        myMap.behaviors.disable('scrollZoom')
+            });
+        </script>
+        <div id="map"></div>
+        <div class="contacts-bl">
+            <div class="contacts-bl-ttl">Болгария</div>
+            <div class="contacts-bl-txt">Варна,  село Генерал Кантарджиево</div>
+            <a href="tel:+359878488035" class="contacts-bl-phn">+ 35 987 84 88 035 (бг/рус)</a>
+            <div class="contacts-bl-txt2">Россия</div>
+            <a href="tel:88002221905" class="contacts-bl-phn2">8 (800) 222-1905, </a>
+            <a href="tel:+79637506969" class="contacts-bl-phn2">+7(963)750-6969</a>
+            <a href="mailto:" class="contacts-bl-ml">Email: sales@ecolife-village.com</a>
+            <a href="#" class="contacts-bl-btn">Обратный звонок</a>
+            
+        </div>
+    </div>
 </div>    
 <footer>
 
