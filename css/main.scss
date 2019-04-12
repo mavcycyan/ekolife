@@ -36,7 +36,9 @@ img { max-width: 100%; height:auto; }
 }
  
 /*header*/
-header {padding: 14px 0px; position: absolute; width: 100%; top: 0; left: 0; z-index: 3;}
+header {padding: 14px 0px; position: absolute; width: 100%; top: 0; left: 0; z-index: 3;
+    .zi {z-index: 3;position: relative;}
+}
 .h {
     &-logo { display: block; text-align: center; }
     &-btn { background: none; margin-top: 33px; width: 50px; border: 0; padding: 0; cursor: pointer;
@@ -48,20 +50,56 @@ header {padding: 14px 0px; position: absolute; width: 100%; top: 0; left: 0; z-i
     &-right { text-align: right; margin-top: 21px; } 
     &-phn { display: inline-block; font-size: 24px; color: #000; } 
     &-txt { display: inline-block; font-size: 14px; text-transform: uppercase; color: #b4bc00; letter-spacing: 3px; padding-top: 2px; }
+    &-menu { background: #fff; padding-top: 112px; position: absolute; top: 0; left: 0; width: 100%; z-index: 2; display: none; padding-bottom: 64px;
+        &.active {display: block;}
+        ul { margin: 0; padding: 0; list-style: none; 
+            li {
+                a { display: block; color: #000; text-transform: uppercase; font-size: 18px; padding: 15px 21px; border-radius: 6px; padding-right: 34px; border: 1px solid #fff; background-image: url('../img/menu-arr.png'); background-repeat: no-repeat; background-position: 92% 50%;
+                    &.active { background-color: #ccd500; border: 1px solid #ccd500; } 
+                    &:hover { border: 1px solid #ccd500; text-decoration: none;}                
+                } 
+            } 
+        } 
+        &-subttl { font-size: 31px; text-transform: uppercase; color: #e0e0e2; padding-top: 211px; line-height: 1.23; letter-spacing: 7px; 
+            span { font-size: 24px; letter-spacing: 6px; }
+        }  
+        &-ttl { font-size: 72px; text-transform: uppercase; color: #e0e0e2; line-height: 1.23; letter-spacing: 21px; }        
+        &-lang { padding-right: 14px; margin-top: 221px; 
+            a { border: 1px solid #e3eff7; border-radius: 4px; text-align: center; display: block; padding: 10px 14px; text-transform: uppercase; font-size: 14px; letter-spacing: 2px; color: #000;} 
+            span { border: 1px solid #dce350; border-radius: 4px; text-align: center; display: block; padding: 10px 14px; text-transform: uppercase; font-size: 14px; letter-spacing: 2px; margin-bottom: 9px; } 
+        }        
+    }
 }
 
 /*header*/
-@media(max-width: 1600px) and (min-width: 1200px){
-   
+@media(max-width: 1199px) and (min-width: 768px){
+    .h {
+        &-phn { font-size: 20px; } 
+        &-txt { font-size: 10px; } 
+        &-menu {
+            ul li a { font-size: 12px; } 
+            &-ttl { font-size: 25px; } 
+            &-subttl { font-size: 20px; 
+                span { font-size: 17px; }     
+            } 
+            &-lang {
+                span, a { padding: 10px 6px; font-size: 13px; }
+            }
+        }
+    }
+
 }
 
 
 @media(max-width: 991px) {
-    header{
-       
-        .h {
-
-        }    
+    header { position: fixed; background: #fff; } 
+    .h {
+        &-right { text-indent: 9999px; width: 50px; height: 50px; float: right; } 
+        &-menu { overflow: auto; max-height: calc(100vh - 84px - 28px); position: static; padding: 30px 0; 
+            &-subttl { display: none; } 
+            &-ttl { display: none; } 
+            &-lang { display: none; }
+        }
     }
 }
 
@@ -71,19 +109,33 @@ header {padding: 14px 0px; position: absolute; width: 100%; top: 0; left: 0; z-i
 @import "_index";
  
 /*footer*/
-footer { }
+footer { padding-bottom: 15px; }
 .f {
-     
+    &-ttl { text-align: center; font-size: 24px; text-transform: uppercase; padding-top: 40px; letter-spacing: 6px; } 
+    &-txt { font-size: 12px; text-transform: uppercase; padding-top: 37px; letter-spacing: 2px; } 
+    &-logo { display: block; text-align: center; padding-top: 12px; } 
+    &-last { text-align: right; font-size: 14px; padding-top: 35px; } 
+    &-soc { padding-top: 42px; 
+        a { display: inline-block; width: 29px; height: 29px; 
+            &.in {background: url('../img/f-in.png')no-repeat 50% 50%; margin-right: 6px;}
+            &.fb {background: url('../img/f-fb.png')no-repeat 50% 50%;}
+            &:hover, &:focus {opacity: 0.5;}
+        }
+    } 
 }
 
 /*footer*/
-@media(max-width: 991px) and (min-width: 768px){
-    
+@media(max-width: 1199px) and (min-width: 768px){
+    .f {
+        &-ttl { font-size: 20px; } 
+        &-txt { font-size: 7px; } 
+        &-last { font-size: 10px; }
+    }
 }
 @media(max-width: 991px) {
-    footer {}
+    footer {text-align: center;}
     .f{
-
+        &-last {text-align: center;}
     }
 }
 

@@ -34,7 +34,7 @@
 <body>
 
 <header>
-    <div class="container">
+    <div class="container zi">
         <div class="row">
             <div class="col-4">
                 <button type="button" class="h-btn">
@@ -54,8 +54,49 @@
             </div>
         </div>
     </div>
+    <div class="h-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <ul>
+                        <li><a href="#" class="active">О поселке</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                        <li><a href="#">Расположение</a></li>
+                        <li><a href="#">Окружение</a></li>
+                        <li><a href="#">Генплан</a></li>
+                        <li><a href="#">Проекты домов</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-5 col-lg-6 offset-lg-1">
+                    <div class="h-menu-subttl">
+                        <span>Современные виллы</span><br>
+                        с панорамным видом
+                    </div>
+                    <div class="h-menu-ttl">Эколайф</div>
+                </div>
+                <div class="col-12 col-md-1 col-lg-1">
+                   <div class="h-menu-lang">
+                      <span>RU</span>
+                       <a href="#">EN</a>
+                   </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
-
+<script>
+$('.h-btn').click(function(){
+    if($('.h-menu').hasClass('active')){
+        $('.h-menu').removeClass('active');
+    }
+    else {
+        $('.h-menu').addClass('active');
+    }
+});    
+</script>
 <div class="wrapper">
     <div class="main">
       <div class="container">
@@ -70,15 +111,15 @@
                 <a href="#" class="main-more">Узнать подробнее</a>
             </div>
             <button class="main-play"></button>
-            <a href="#" class="main-gonext"></a>
+            <a href="#future" class="main-gonext"></a>
       </div>
     </div>
-    <div class="future">
+    <div class="future" id="future">
         <div class="container">
             <div class="future-ttl">ВАШ ДОМ <br><span>Будущего</span> </div>
             <div class="future-txt">ЭКОЛАЙФ - элитный коттеджный поселок <br>на морском побережье.</div>
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="future-bl">
                         <div class="future-bl-ttl">ЭКОЛАЙФ - поселок коттеджного типа<br>
                             класса Luxury, расположен на морском<br>
@@ -93,7 +134,7 @@
                         <a href="#" class="future-bl-more">Узнать больше</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                   <div class="future-img-wp">
                        <div class="row">
                             <div class="col-6">
@@ -121,7 +162,7 @@
             <div class="preim-subttl">В чем наши</div>
             <div class="preim-ttl">преимущества?</div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-lg-4">
                     <div class="preim-bl">
                         <div class="preim-bl-img">
                            <div class="preim-bl-num">1</div>
@@ -133,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-lg-4">
                     <div class="preim-bl">
                         <div class="preim-bl-img">
                            <div class="preim-bl-num">2</div>
@@ -145,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-lg-4">
                     <div class="preim-bl">
                         <div class="preim-bl-img">
                            <div class="preim-bl-num">3</div>
@@ -157,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-lg-4">
                     <div class="preim-bl">
                         <div class="preim-bl-img">
                            <div class="preim-bl-num">4</div>
@@ -169,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-lg-4">
                     <div class="preim-bl">
                         <div class="preim-bl-img">
                            <div class="preim-bl-num">5</div>
@@ -181,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-lg-4">
                     <div class="preim-bl">
                         <div class="preim-bl-img">
                            <div class="preim-bl-num">6</div>
@@ -224,11 +265,11 @@
     <div class="choose">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-lg-3">
                     <div class="choose-subttl">выберите<span>свой новый</span></div>
                     <div class="choose-ttl">ДОМ</div>  
                 </div>
-                <div class="col-12 col-md-6 col-lg-9">
+                <div class="col-12 col-lg-9">
                     <div class="choose-txt">Товарищи! рамки и место обучения кадров в значительной степени обуславливает создание новых предложений. С другой стороны укрепление и развитие структуры представляет собой интересный эксперимент проверки дальнейших направлений развития.</div>
                 </div>
             </div>
@@ -249,7 +290,7 @@
                 </ul>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="sl-block-cont active" data-cont="sl1-cont0">
                         <div class="sl-block-cont-ttl">Дуплекс - 200 м<sup>2</sup></div>
                         <div class="sl-block-cont-subttl">+ земельный участок 300 м<sup>2</sup></div>
@@ -281,7 +322,7 @@
                         </div>
                     </div>                                      
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="sl-block-right active" data-cont="sl1-right0">
                         <div class="sl-block-right-txt">Получите презентацию дома с полным<br>описанием, фотографиями и ценами</div>
                         <a href="#" class="sl-block-right-btn">Получить перзентацию</a>
@@ -320,7 +361,7 @@
                 </ul>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="sl-block-right active" data-cont="sl2-right0">
                         <div class="sl-block-right-txt">Получите презентацию дома с полным<br>описанием, фотографиями и ценами</div>
                         <a href="#" class="sl-block-right-btn">Получить перзентацию</a>
@@ -337,7 +378,7 @@
                         <a href="#" class="sl-block-right-see">Посмотреть варианты интерьера</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="sl-block-cont active" data-cont="sl2-cont0">
                         <div class="sl-block-cont-ttl">коттедж - 150 м<sup>2</sup></div>
                         <div class="sl-block-cont-subttl">+ земельный участок 300 м<sup>2</sup></div>
@@ -392,7 +433,7 @@
                 </ul>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="sl-block-cont active" data-cont="sl3-cont0">
                         <div class="sl-block-cont-ttl">коттедж - 180 м<sup>2</sup></div>
                         <div class="sl-block-cont-subttl">+ земельный участок 300 м<sup>2</sup></div>
@@ -424,7 +465,7 @@
                         </div>
                     </div>                                      
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="sl-block-right active" data-cont="sl3-right0">
                         <div class="sl-block-right-txt">Получите презентацию дома с полным<br>описанием, фотографиями и ценами</div>
                         <a href="#" class="sl-block-right-btn">Получить перзентацию</a>
@@ -577,14 +618,14 @@
     <div class="ekskurs">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-7">
+                <div class="col-12 col-lg-7">
                     <div class="ekskurs-left">
                         <div class="ekskurs-txt">Проведем для вас</div>
                         <div class="ekskurs-ttl">экскурсию по<br>территории <br>поселка</div>
                         <div class="ekskurs-img"><img src="img/ekskurs-img.png" alt=""></div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5">
+                <div class="col-12 col-lg-5">
                     <div class="ekskurs-form">
                         <div class="ekskurs-form-txt">Менеджер забронирует удобное для вас<br>время. Если необходимо, мы организуем<br>транспорт</div>
                         <form action="">
@@ -610,11 +651,11 @@
             <div class="ekolog-txt">при строительстве натуральные материалы <br>высокого качества</div>
             <div class="ekolog-sl">
                 <ul id="ekolog-sl">
-                    <li><img src="img/ekolog1.png" alt=""></li>
-                    <li><img src="img/ekolog2.png" alt=""></li>
-                    <li><img src="img/ekolog3.png" alt=""></li>
-                    <li><img src="img/ekolog4.png" alt=""></li>
-                    <li><img src="img/ekolog1.png" alt=""></li>
+                    <li><a href="#" target="_blank"><img src="img/ekolog1.png" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="img/ekolog2.png" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="img/ekolog3.png" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="img/ekolog4.png" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="img/ekolog1.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -622,7 +663,7 @@
     <div class="answer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-7">
+                <div class="col-12 col-lg-7">
                     <div class="answer-left">
                         <div class="answer-txt">Остались вопросы? Напишите нам и </div>
                         <div class="answer-ttl">мы с удовольствием<br>ответим вам</div>
@@ -636,7 +677,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5">
+                <div class="col-12 col-lg-5">
                     <div class="answer-form">
                         <form action="">
                             <div class="answer-form-in">
@@ -662,8 +703,8 @@
     <div class="news">
         <div class="container">
            <div class="row">
-                <div class="col-12 order-md-1 col-md-6 col-lg-8"><div class="news-ttl">Новости</div></div>
-                <div class="col-12 order-md-3">
+                <div class="col-12 order-lg-1 col-lg-8"><div class="news-ttl">Новости</div></div>
+                <div class="col-12 order-lg-3">
                     <div class="news-cont row">
                         <div class="col-12 col-lg-4">
                             <div class="news-bl">
@@ -691,7 +732,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 order-md-2 col-md-6 col-lg-4"><a href="#" class="news-btn">Читать все новости</a></div>               
+                <div class="col-12 order-lg-2 col-lg-4"><a href="#" class="news-btn">Читать все новости</a></div>               
            </div>
         </div>
     </div>
@@ -781,7 +822,28 @@
     </div>
 </div>    
 <footer>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="f-ttl">Эколайф</div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-3">
+                <div class="f-txt">Современные виллы<br>с панорамным видом</div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2">
+                <a href="#" class="f-logo"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-xl-4">
+                <div class="f-last">Последние новости поселка<br>в социальных сетях</div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 col-xl-1">
+                <div class="f-soc">
+                    <a href="#" class="in" target="_blank"></a>
+                    <a href="#" class="fb" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <div style="display:none;">
