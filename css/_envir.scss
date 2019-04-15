@@ -1,0 +1,40 @@
+/*page_envir*/
+.page_envir {background: url('../img/page_ques-back.png')no-repeat 50% 0, #fff; padding-top: 145px;padding-bottom: 93px; z-index: 2; position: relative;
+    &-top { padding-bottom: 96px;position: relative;}
+    &-ttl { font-size: 49px; text-transform: uppercase; padding-top: 6px; letter-spacing: 9px; }
+    &-cont { margin-top: 31px; 
+        &-ttl { margin-bottom: 25px; display: block; font-size: 18px; text-transform: uppercase; font-weight: 500; letter-spacing: 5px; } 
+        &-txt { font-size: 18px; margin: 0; margin-bottom: 25px; padding-right: 2px; }
+        &-img-l { max-width: 585px; position: relative; margin-bottom:25px;
+            b { text-align: center; display: block; text-transform: uppercase; font-size: 14px; margin-top: 25px; color: #00000080; } 
+            &-bl { position: relative; border: 1px solid #dde352; margin: 7px; max-width: 367px; padding: 19px 22px; position: absolute; top: 41px; right: -60px; 
+                &:before { content: ''; position: absolute; display: block; top: -7px; left: -7px; background: #fff; width: calc(100% + 14px); height: calc(100% + 14px); z-index: 0; } 
+                &:after { content: ''; position: absolute; display: block; top: 0; left: 0; background: #fff; width: 100%; height: 100%; border: 1px solid #dde352; z-index: 0; }   
+                &-ttl { z-index: 1; position: relative; font-size: 19px; text-transform: uppercase; color: #0d101f; line-height: 1.25; letter-spacing: 4px; font-weight: 700; }
+                &-txt { z-index: 1; position: relative; margin-top: 18px; } 
+            }           
+        }
+        &-img-r{ margin-bottom:25px; 
+            &:first-child { margin-top: 41px; }
+            b { text-align: center; display: block; text-transform: uppercase; font-size: 14px; margin-top: 25px; color: #00000080; }
+        }
+        &-txt2 {
+            p {font-size: 18px; margin: 0; margin-bottom: 25px; padding-right: 2px;}
+        }
+        &-sl { margin-bottom: 60px;
+            .lSSlideOuter {padding: 0!important;}
+            .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover { border-radius: 0px; position: relative; 
+                &:before { content: ''; position: absolute; top: 0; display: block; width: 100%; height: 100%; left: 0; box-shadow: inset 0px 0px 0px 5px #dce350;}
+            }
+        }
+        &-img2-l { max-width: 400px; margin-top: 41px; 
+            span { display: block; margin-top: 25px; }
+        }
+    } 
+    
+}
+/*page_envir*/
+@media(max-width: 991px){
+    .page_envir {padding-bottom: 30px;}
+    .page_envir-ttl {font-size: 7vw;}
+}
