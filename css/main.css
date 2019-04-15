@@ -477,6 +477,29 @@ header .zi { z-index: 3; position: relative; }
 
 /*contacts*/
 @media (max-width: 991px) { .contacts .contacts-bl { position: static; transform: translateY(0); margin: 0 auto; } }
+/*page_about*/
+.page_about { background: url("../img/page_ques-back.png") no-repeat 50% 0, #fff; padding-top: 145px; padding-bottom: 93px; z-index: 2; position: relative; }
+.page_about-top { padding-bottom: 96px; position: relative; }
+.page_about-ttl { font-size: 49px; text-transform: uppercase; padding-top: 6px; letter-spacing: 9px; }
+.page_about-cont { margin-top: 31px; }
+.page_about-bl { margin-top: 70px; }
+.page_about-bl-ttl { font-size: 24px; font-weight: 700; line-height: 1.3; }
+.page_about-bl-txt { margin-top: 20px; font-size: 18px; line-height: 1.7; }
+.page_about-bl-txt p { margin-bottom: 30px; }
+.page_about-img { margin-bottom: 30px; }
+.page_about-img-wp { margin-top: 61px; }
+.page_about-img.mb { margin-bottom: 36px; }
+.page_about .page_about-txt p { margin-bottom: 40px; }
+.page_about-quote { margin-top: 43px; border-top: 1px solid #e9e9e9; font-size: 24px; text-transform: uppercase; padding-top: 56px; letter-spacing: 6px; background: url("../img/page_about-quote.jpg") no-repeat 100% 100%; margin-bottom: 40px; padding-right: 73px; }
+.page_about-row { margin-bottom: 40px; }
+.page_about-img_container { margin-bottom: 25px; }
+.page_about-img_container img { display: block; }
+.page_about-img_container b { text-align: center; display: block; text-transform: uppercase; font-size: 14px; margin-top: 25px; color: #000; }
+
+/*page_about*/
+@media (max-width: 991px) { .page_about { padding-bottom: 30px; }
+  .page_about-ttl { font-size: 7vw; }
+  .page_about-bl { margin-top: 0; } }
 /*page_ques*/
 .page_ques { background: url("../img/page_ques-back.png") no-repeat 50% 0; padding-top: 145px; padding-bottom: 142px; }
 .page_ques-top { padding-bottom: 96px; position: relative; }
