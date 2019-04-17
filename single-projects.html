@@ -104,6 +104,53 @@
        </div>
        <div class="page_single_proj-cont">
           <div class="container">
+              <div class="page_single_proj-cont-white">
+                 <div class="row">
+                      <div class="col-12 col-md-6 col-lg-7">
+                          <div class="page_single_proj-cont-sl">
+                              <ul id="sl-proj">
+                                  <li data-thumb="img/page_single_proj-img.jpg" data-src="img/page_single_proj-img.jpg"><img src="img/page_single_proj-img.jpg" alt=""></li>
+                                  <li data-thumb="img/page_single_proj-img.jpg" data-src="img/page_single_proj-img.jpg"><img src="img/page_single_proj-img.jpg" alt=""></li>
+                                  <li data-thumb="img/page_single_proj-img.jpg" data-src="img/page_single_proj-img.jpg"><img src="img/page_single_proj-img.jpg" alt=""></li>
+                                  <li data-thumb="img/page_single_proj-img.jpg" data-src="img/page_single_proj-img.jpg"><img src="img/page_single_proj-img.jpg" alt=""></li>
+                                  <li data-thumb="img/page_single_proj-img.jpg" data-src="img/page_single_proj-img.jpg"><img src="img/page_single_proj-img.jpg" alt=""></li>
+                                  <li data-thumb="img/page_single_proj-img.jpg" data-src="img/page_single_proj-img.jpg"><img src="img/page_single_proj-img.jpg" alt=""></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-5">
+                          <div class="page_single_proj-cont-bl">
+                              <div class="page_single_proj-cont-bl-row">
+                                  <div class="page_single_proj-cont-bl-ttl">ТАУНХАУС</div>   
+                                  <div class="page_single_proj-cont-bl-count">В продаже 13 объектов</div>
+                              </div>
+                              <div class="page_single_proj-cont-bl-row">
+                                  <div class="page_single_proj-cont-bl-txt-l">Площадь дома</div>      
+                                  <div class="page_single_proj-cont-bl-txt-r">169.00 м<sup>2</sup></div>
+                              </div>
+                              <div class="page_single_proj-cont-bl-row">
+                                  <div class="page_single_proj-cont-bl-txt-l">Площадь участка</div>      
+                                  <div class="page_single_proj-cont-bl-txt-r">2-3 сот.</div>
+                              </div>
+                              <div class="page_single_proj-cont-bl-row">
+                                  <div class="page_single_proj-cont-bl-txt-l">Этажей</div>      
+                                  <div class="page_single_proj-cont-bl-txt-r">2</div>
+                              </div>
+                              <div class="page_single_proj-cont-bl-row">
+                                  <div class="page_single_proj-cont-bl-txt-l">Терасса</div>      
+                                  <div class="page_single_proj-cont-bl-txt-r">Да</div>
+                              </div>
+                              <div class="page_single_proj-cont-bl-row">
+                                  <div class="page_single_proj-cont-bl-txt-l">Гараж</div>      
+                                  <div class="page_single_proj-cont-bl-txt-r">Да</div>
+                              </div>
+                              <div class="page_single_proj-cont-bl-price">от 219 млн.руб</div>
+                              <a href="#" class="page_single_proj-cont-bl-btn">Оставить заявку</a>
+                          </div>
+                      </div> 
+                     
+                 </div> 
+              </div>           
               <div class="page_single_proj-txt">
                   <h3>Описание таунхауса</h3>
                   <p>Созданный архитектурный дизайн точно передает уникальную игру солнечного света, синего моря, безмятежных пляжей и освежающей зелени Черноморского побережья. Создаваемую в каждой Вилле картину дополняют плавательные бассейны открытого типа.</p>
@@ -353,6 +400,40 @@ jQuery(document).ready(function($){
 $(".fancybox").fancybox();
 });
 </script>
+
+<script type="text/javascript" src="js/lightslider.min.js"></script>
+<script>
+$(document).ready(function() {		
+    $('#sl-proj').lightSlider({
+        item:1,
+        auto:false,
+        autoWidth:false,
+        loop:false,
+        pause: 4000,
+        speed:1000,
+        controls:true,
+        enableDrag:false,
+        enableTouch:false,
+        gallery:true,
+        freeMove:false,
+        thumbItem:4,
+        pager:true, 
+        onSliderLoad: function(el) {
+                $('#sl-envir').removeClass('cS-hidden');
+                el.lightGallery({
+                    selector: '#sl-envir .lslide'
+                });            
+        },
+        responsive : [
+        {
+            breakpoint:991, 
+                settings: {item:1}
+        }
+        ]
+
+        });
+});
+</script> 
 
 <script type="text/javascript" src="js/main.js"></script>
 

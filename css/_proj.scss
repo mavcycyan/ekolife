@@ -5,7 +5,7 @@
     &-cont { margin-top: 31px; } 
     &-bl { padding: 10px 10px 22px; background: #fff; box-shadow: 0px 34px 64px 20px #66666636; margin-bottom: 40px;
         &-img { text-align: center; display: block;} 
-        &-row { text-align: justify; margin-top: 15px; font-size: 0; padding: 0 9px; 
+        &-row { text-align: justify; margin-top: 15px; font-size: 0; padding: 0 9px; border-bottom: 1px solid #e8e8e8; padding-bottom: 15px;
             &:before{ content: ''; display: block; width: 100%; height: 0; } 
             &:after { width: 100%; height: 0; visibility: hidden; overflow: hidden; content: ''; display: inline-block; }        
         } 
