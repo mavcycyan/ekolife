@@ -1,4 +1,9 @@
 /**/
+jQuery(document).ready(function($){
+$(".fancybox").fancybox();
+$('[name="phone"]').mask('+7 ( 999 ) 999 99 99');
+});
+
 jQuery(document).ready(function($){	
     $(".ath").fancybox({ 
         href: '#modal_auth', 
@@ -21,5 +26,15 @@ $('.h-btn').click(function(){
         $(this).addClass('active');
         $('.h-menu').addClass('active');
     }
-});    
+});   
+$(".c_back").fancybox({ 
+    href: '#modal_cb', 
+    wrapCSS: 'modal_cb_wp'
+});
+$(".c_pres").fancybox({ 
+    href: '#modal_pres', 
+    wrapCSS: 'modal_cb_wp'
+});
+
+
 /**/

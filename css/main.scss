@@ -144,6 +144,30 @@ header {padding: 14px 0px; position: absolute; width: 100%; top: 0; left: 0; z-i
 @import "_single-proj";
 @import "_contacts";
  
+/*modal_cb*/
+.modal_cb { width: 100vh; max-width: 484px; padding: 48px 40px 40px; background: #fff; border-radius: 8px; } 
+.modal_cb-ttl { font-size: 30px; color: #000;text-transform: uppercase; letter-spacing: 4px; } 
+.modal_cb-txt { font-size: 14px; line-height: 24px; color: #979797; margin-top: 12px; text-align: center; }
+.modal_cb_wp .fancybox-skin { padding: 0!important; background: #fff; border-radius: 8px; } 
+.modal_cb_wp .fancybox-close { background: url('../img/cls.png'); width: 33px; height: 33px; background-repeat: no-repeat; top: 12px; right: 12px; filter: inherit; }
+.modal_cb-form { margin-top: 27px; }
+.modal_cb-form-in label { font-size: 13px; text-transform: uppercase; color: #000; }
+.modal_cb-form-in input { background: #f7f7f7; border: 0; color: #000; text-transform: uppercase; font-size: 24px; margin-top: 6px; border-radius: 4px; padding: 10px 16px; width: 100%; } 
+.modal_cb-form-in textarea { width: 100%; background: rgba(247, 247, 247, 0.5); border: 1px solid #E3E3E3; box-sizing: border-box; border-radius: 4px; padding: 10px 16px; resize: none; } 
+.modal_cb-form-in { margin-bottom: 16px; } 
+.modal_cb-form-btn button { width: 100%; display: inline-block; max-width: 460px; background: #dde352; color: #000; text-transform: uppercase; font-size: 14px; letter-spacing: 4px; margin-top: 35px; padding: 21px 15px; border-radius: 4px; border:none; cursor: pointer; }
+.modal_cb-btn { width: 100%; display: inline-block; max-width: 460px; background: #dde352; color: #000; text-transform: uppercase; font-size: 14px; letter-spacing: 4px; margin-top: 35px; padding: 21px 15px; border-radius: 4px; border:none; cursor: pointer; text-align: center; }
+.modal_cb-btn:hover { text-decoration: none; color: #000; }
+.modal_cb-form-span { display: block; text-align: center; color: #000; font-size: 12px; margin-top: 18px; max-width: 400px; }
+.modal_cb-form-span a { color: #000; text-decoration: underline; }
+/*modal_cb*/
+@media (max-width: 991px) {
+    .modal_cb-ttl {font-size: 4vw;} 
+    .modal_cb {width: 100%;}
+    .modal_cb-form-in input { font-size: 18px; } 
+    .modal_cb-form-btn button {font-size: 16px;}
+}
+
 /*footer*/
 footer { padding-bottom: 15px; }
 .f {
